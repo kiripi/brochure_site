@@ -11,18 +11,23 @@
 */
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
+html {
+  font-size: 60%;
+}
+
 body {
+  box-sizing: border-box;
   color: #777;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -30,23 +35,25 @@ body {
     url("https://cdn.pixabay.com/photo/2016/11/18/19/40/woman-1836601_960_720.jpg");
   background-size: cover;
   background-position: top;
+  border-radius: 0.5rem;
   height: 95vh;
 }
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  left: 4rem;
+  top: 4rem;
 }
 
 .logo {
-  height: 55px;
+  height: 3.5rem;
 }
 
 .text-box {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 
@@ -57,14 +64,41 @@ body {
 
 .heading-primary {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 }
 
 .heading-secondary {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
+  margin-bottom: 6rem;
+}
+
+.btn:link,
+.btn:visited {
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
