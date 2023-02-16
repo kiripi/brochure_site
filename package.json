@@ -1,0 +1,22 @@
+{
+  "name": "brochure",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiripi/brochure_site.git"
+  },
+  "author": "kiripi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiripi/brochure_site/issues"
+  },
+  "homepage": "https://github.com/kiripi/brochure_site#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
