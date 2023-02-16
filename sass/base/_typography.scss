@@ -1,0 +1,27 @@
+body {
+  color: $color-dark-grey;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  padding: 3rem;
+}
+
+.heading {
+  color: $color-primary-light;
+  text-transform: uppercase;
+  &-primary {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+  }
+
+  &-secondary {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    margin-bottom: 6rem;
+  }
+}
