@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 60%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  padding: 3rem; }
+
+.heading {
+  color: #caf0f8;
+  text-transform: uppercase; }
+  .heading-primary {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem; }
+  .heading-secondary {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    margin-bottom: 6rem; }
+
+.heading-sub {
+  background-image: linear-gradient(to top, #caf0f8, #023d8ace);
+  color: transparent;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  transition: all 0.2s; }
+  .heading-sub:hover {
+    transform: skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  padding: auto; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.center-text {
+  text-align: center; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.btn:link, .btn:visited {
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s; }
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px); }
+
+.btn:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px); }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+
+.btn-text:link, .btn-text:visited {
+  border-bottom: 1px solid #90e1ef;
+  color: #90e1ef;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 3px;
+  text-decoration: none;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #90e1ef;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    outline-offset: 2rem;
+    position: absolute;
+    width: 55%;
+    transition: all 0.2s; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      outline: 1.5rem solid #90e1ef;
+      transform: scale(1.05) translateY(-0.5rem);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.header {
+  background-image: linear-gradient(to left bottom, rgba(144, 225, 239, 0.8), rgba(2, 61, 138, 0.8)), url("https://cdn.pixabay.com/photo/2014/10/06/22/01/kayak-476861__340.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0.5rem;
+  height: 95vh;
+  /* clip generated on this site => https://wave.novoselski.net/ */
+  clip-path: polygon(100% 0%, 0% 0%, 0% 92.73%, 2% 92.6%, 4% 92.23%, 6% 91.68%, 8% 91.02%, 10% 90.35%, 12% 89.75%, 14% 89.32%, 16% 89.11%, 18% 89.15%, 20% 89.44%, 22% 89.93%, 24% 90.57%, 26% 91.25%, 28% 91.88%, 30% 92.38%, 32% 92.67%, 34% 92.71%, 36% 92.5%, 38% 92.07%, 40% 91.47%, 42% 90.79%, 44% 90.13%, 46% 89.58%, 48% 89.22%, 50% 89.09%, 52% 89.22%, 54% 89.58%, 56% 90.13%, 58% 90.79%, 60% 91.47%, 62% 92.07%, 64% 92.5%, 66% 92.71%, 68% 92.67%, 70% 92.38%, 72% 91.88%, 74% 91.25%, 76% 90.57%, 78% 89.93%, 80% 89.44%, 82% 89.15%, 84% 89.11%, 86% 89.32%, 88% 89.75%, 90% 90.35%, 92% 91.02%, 94% 91.68%, 96% 92.23%, 98% 92.6%, 100% 92.73%); }
+  .header .logo-box {
+    position: absolute;
+    left: 4rem;
+    top: 4rem; }
+  .header .logo {
+    height: 3.5rem; }
+  .header .text-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    float: left; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.section-about {
+  background-color: #f1f1f1;
+  padding: 25rem 0;
+  margin-top: -20vh; }
