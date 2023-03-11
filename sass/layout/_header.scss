@@ -65,6 +65,11 @@
     98% 92.6%,
     100% 92.73%
   );
+
+  @include device(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
   .logo-box {
     position: absolute;
     left: 4rem;

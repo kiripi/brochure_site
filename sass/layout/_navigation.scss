@@ -15,6 +15,16 @@
     right: 6rem;
     text-align: center;
     z-index: 2000;
+
+    @include device(tab) {
+      right: 4rem;
+      top: 4rem;
+    }
+
+    @include device(phone) {
+      right: 3rem;
+      top: 3rem;
+    }
   }
 
   &__background {
@@ -25,13 +35,23 @@
     position: fixed;
     right: 6.5rem;
     top: 6.5rem;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-out;
     z-index: 1000;
+
+    @include device(tab) {
+      right: 4.5rem;
+      top: 4.5rem;
+    }
+
+    @include device(phone) {
+      right: 3.5rem;
+      top: 3.5rem;
+    }
   }
 
   &__nav {
     height: 100vh;
-    opacity: 0;
+    display: none;
     width: 0;
     position: fixed;
     left: 0;
@@ -92,7 +112,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
-    opacity: 1;
+    display: inline-block;
     width: 100%;
   }
 

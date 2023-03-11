@@ -23,6 +23,7 @@
   &:active,
   &:focus {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
+    outline: none;
     transform: translateY(-1px);
   }
 

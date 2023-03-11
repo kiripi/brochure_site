@@ -9,13 +9,28 @@
   width: 75%;
   transform: skewX(15deg);
 
+  @include device(tab) {
+    padding: 4rem;
+    padding-left: 7rem;
+    width: 100%;
+  }
+
+  @include device(phone) {
+    transform: skewX(0);
+  }
+
   &__shape {
+    border-radius: 50%;
     clip-path: circle(50% at 50% 50%);
     float: left;
     height: 15rem;
     width: 15rem;
     shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(-15deg);
+
+    @include device(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -26,6 +41,10 @@
 
   &__text {
     transform: skewX(-15deg);
+
+    @include device(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {

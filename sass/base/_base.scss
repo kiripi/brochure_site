@@ -8,8 +8,34 @@
 
 html {
   font-size: 60%;
+
+  @include device(phone) {
+    font-size: 30%;
+  }
+
+  @include device(tab) {
+    font-size: 50%;
+  }
+
+  @include device(tab-land) {
+    font-size: 55%;
+  }
+
+  @include device(big-screen) {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include device(tab) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
